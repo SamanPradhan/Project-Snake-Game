@@ -1,0 +1,59 @@
+:root {
+  --background-color: #006c78;
+  --snake-color: #af4c4c;
+  --food-color: #3643f4;
+  --border-color: #7f1e00;
+  --button-background: #8a2be2;
+  --button-color: #ffe600;
+  --game-over-background: rgba(30, 30, 47, 0.9);
+}
+
+.App {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: var(--background-color);
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  position: relative;
+  text-align: center;
+}
+
+canvas {
+  background-color: #ffffff;
+  border-radius: 50%;
+  border: 5px solid var(--border-color);
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.game-over {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: var(--game-over-background);
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  color: white;
+  font-size: 20px;
+  z-index: 1;
+}
+
+button {
+  background-color: var(--button-background);
+  color: var(--button-color);
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 16px;
+  margin-top: 10px;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #9ad222;
+}
